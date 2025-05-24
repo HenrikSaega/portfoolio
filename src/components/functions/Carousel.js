@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const InfiniteCarousel = ({ items, speed = 0.3 }) => {
+const InfiniteCarousel = ({ items, speed = 0.33 }) => {
   const containerRef = useRef(null);
   const animationRef = useRef(null);
   const positionRef = useRef(0);
@@ -34,7 +34,7 @@ const InfiniteCarousel = ({ items, speed = 0.3 }) => {
     <div
       style={{
         overflow: 'hidden',
-        width: '50%',
+        width: '70%',
         maxWidth: '100%',
       }}
     >
