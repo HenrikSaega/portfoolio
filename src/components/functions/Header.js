@@ -1,0 +1,45 @@
+import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+import '../styles/header.css';
+import { ReactComponent as Logo } from "../pics/Logosvg.svg";
+
+const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const [hovered, setHovered] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const headerClass = `navigation-menu ${scrolled && !hovered ? 'navigation-menu-small' : ''}`;
+
+  return (
+    <header 
+      className={headerClass} 
+      onMouseEnter={() => setHovered(true)} 
+      onMouseLeave={() => setHovered(false)}
+    >
+      <nav className="nav-buttons">
+        <NavLink className="no-select"  to="/" exact="true" activeclassname="active">AVALEHT</NavLink>
+        <NavLink className="no-select"  to="/aboutme" activeclassname="active">ABOUT ME</NavLink>
+        <Logo className='logo no-select' />
+        <NavLink className="no-select"  to="/projects" activeclassname="active">PROJECTS</NavLink>
+        <NavLink to="/contact" activeclassname="active">CONTACT</NavLink>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;

@@ -1,0 +1,77 @@
+.navigation-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7rem;
+  background: rgba(66, 66, 66, 0.301);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: 0.3s ease;
+}
+.navigation-menu-small {
+  height: 6vh;
+  transition: 0.3s ease;
+}
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  transition: 0.3s ease;
+}
+
+.nav-buttons button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  color: #007BFF;
+}
+
+.logo{
+    height: 5rem;
+    width: auto;
+    transition: 0.5s ease;
+    opacity: 1;
+}
+.logo:hover{
+    scale: 1.2;
+    transform: translateY(0.3rem);
+}
+.navigation-menu-small .logo {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+a{
+    font-family: Mulish, Arial, Helvetica, sans-serif;
+    color: #FFF;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover{
+    color: #fa812b;
+    scale: 1.2;
+    transform: translateY(0.3rem);
+}
+.navigation-menu-small .nav-buttons a {
+  font-size: 1.2rem
+}
+a.active {
+  color: #fa812b;
+  border-bottom: 3px solid #fa812b;
+}
