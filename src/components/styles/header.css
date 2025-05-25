@@ -9,17 +9,21 @@
   z-index: 999;
   transition: 0.3s ease;
 }
+
+
 .navigation-menu-small {
   height: 6vh;
   transition: 0.3s ease;
 }
+
+
 .nav-buttons {
   display: flex;
   justify-content: center;
   gap: 2rem;
   padding: 1rem 0;
-  transition: 0.3s ease;
 }
+
 
 .nav-buttons button {
   background: none;
@@ -27,23 +31,27 @@
   font-size: 1rem;
   color: #333;
   cursor: pointer;
-  transition: color 0.3s ease;
 }
+
 
 .nav-buttons button:hover {
   color: #007BFF;
 }
 
+
 .logo{
-    height: 5rem;
-    width: auto;
-    transition: 0.5s ease;
-    opacity: 1;
+  height: 5rem;
+  width: 6rem;
+  transition: 0.5s ease;
 }
+
+
 .logo:hover{
     scale: 1.2;
     transform: translateY(0.3rem);
 }
+
+
 .navigation-menu-small .logo {
   opacity: 0;
   visibility: hidden;
@@ -53,25 +61,30 @@
   pointer-events: none;
 }
 
+
 a{
-    font-family: Mulish, Arial, Helvetica, sans-serif;
-    color: #FFF;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    transition: 0.3s ease;
+  font-family: Mulish, Arial, Helvetica, sans-serif;
+  color: #FFF;
+  font-size: clamp(0.5rem, 3vw, 1.5rem);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
+
 a:hover{
-    color: #fa812b;
-    scale: 1.2;
-    transform: translateY(0.3rem);
+  color: #fa812b;
+  scale: 1.2;
+  transform: translateY(0.3rem);
 }
+
+
 .navigation-menu-small .nav-buttons a {
   font-size: 1.2rem
 }
+
+
 a.active {
   color: #fa812b;
-  border-bottom: 3px solid #fa812b;
 }

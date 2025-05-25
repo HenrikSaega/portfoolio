@@ -1,7 +1,7 @@
 import "../styles/projektid.css"
 
 
-const Projektid = () => {
+const Projects = () => {
     return (
         <>
         <div className="projektid-container">
@@ -28,4 +28,4 @@ const Projektid = () => {
         </>
       );
 }
-export default Projektid
+export default Projects

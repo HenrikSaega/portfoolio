@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/header.css';
-import { ReactComponent as Logo } from "../pics/Logosvg.svg";
+import { ReactComponent as Logo } from "../pics/Logo2.svg";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -32,7 +32,7 @@ const Header = () => {
       onMouseLeave={() => setHovered(false)}
     >
       <nav className="nav-buttons">
-        <NavLink className="no-select"  to="/" exact="true" activeclassname="active">AVALEHT</NavLink>
+        <NavLink className="no-select"  to="/" exact="true" activeClassName="active">AVALEHT</NavLink>
         <NavLink className="no-select"  to="/aboutme" activeclassname="active">ABOUT ME</NavLink>
         <Logo className='logo no-select' />
         <NavLink className="no-select"  to="/projects" activeclassname="active">PROJECTS</NavLink>

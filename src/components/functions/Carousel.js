@@ -51,8 +51,8 @@ const InfiniteCarousel = ({ items, speed = 0.33 }) => {
             key={index}
             style={{
               flex: '0 0 auto',
-              width: 'clamp(60px, 20vw, 150px)',
-              height: 'clamp(60px, 15vw, 150px)',
+              width: 'clamp(30px, 15vw, 150px)',
+              height: 'clamp(30px, 15vw, 150px)',
               backgroundImage: `url(${item})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',

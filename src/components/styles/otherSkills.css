@@ -1,0 +1,127 @@
+.other-skills-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.other-skills-toggle p {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: none;
+  color: #9b9b9b;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.other-skills-toggle p:hover {
+  color: #fff;
+  scale: 1.2;
+}
+
+.other-skills {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-skills-item-container {
+  height: 10rem;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.other-skills-item {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  background-color: #ffa66700;
+  border-radius: 1rem;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.other-skills-item:hover {
+  scale: 1.1;
+  transform: translateY(-0.5rem);
+}
+.other-skills-item img,
+.other-skills-item img {
+  width: 3rem;
+  height: auto;
+  object-fit: contain;
+}
+.other-skill-bar {
+  position: absolute;
+  bottom: 10px;
+  left: 10%;
+  height: 6px;
+  width: 0;
+  background-color: #007bff;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.other-skills-item:hover .skill-bar {
+  width: var(--level);
+}
+.other-skills-item {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  background-color: transparent;
+  border-radius: 1rem;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.other-skills-item:hover {
+  scale: 1.1;
+  transform: translateY(-0.5rem);
+}
+
+.other-skill-bar {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 10%;
+  width: 80%;
+  height: 8px;
+  background-color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.other-skills-item:hover .other-skill-bar {
+  background-color: white;
+}
+
+.other-skill-bar-fill {
+  height: 100%;
+  width: 0;
+  background-color: #007bff;
+  border-radius: 10px 0 0 10px;
+  transition: width 0.5s ease;
+}
+
+.other-skills-item:hover .other-skill-bar-fill {
+  width: var(--level);
+}

@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
-import OrButton from "../functions/ContactOrButton";
+import DirectEmailText from "../utils/DirectEmailText";
 import "../styles/kontakt.css";
 import emailjs from 'emailjs-com';
 
-const Kontakt = () => {
+const Contact = () => {
   const [formData, setFormData] = useState({
     subject: "",
     name: "",
@@ -11,8 +11,9 @@ const Kontakt = () => {
     message: ""
   });
 
-
   const formRef = useRef();
+  const [successMsg, setSuccessMsg] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
 
 
   const handleChange = (e) => {
@@ -28,7 +29,9 @@ const Kontakt = () => {
     e.preventDefault();
 
     if (!emailRegex.test(formData.email)) {
-    alert("Please enter a valid email address ending!");
+    setErrorMsg("Please emter a valid email address ending!");
+    setSuccessMsg("");
+    setTimeout(() => setErrorMsg(""), 5000);
     return;
     }
 
@@ -39,20 +42,23 @@ const Kontakt = () => {
       'MilrnFaf8601J-Vgq'
     ).then((result) => {
       console.log(result.text);
-      alert("Message sent!");
+      setSuccessMsg("Message sent!");
+      setErrorMsg("");
       setFormData({subject: "", name: "", email: "", message: "" });
+      setTimeout(() => setSuccessMsg(""), 5000);
     }, (error) => {
       console.log(error.text);
-      alert("Failed to send message.");
+      setErrorMsg("Failed to send message.");
+      setSuccessMsg("");
+      setTimeout(() => setErrorMsg(""), 5000);
     });
   };
 
   return (
     <>
       <div className="kontakt-form-container">
-        <h1>CONTACT</h1>
+        <h1 className="no-select">CONTACT ME</h1>
         <form ref={formRef} className="kontakt-form" onSubmit={handleSubmit}>
-          <h2>CONTACT ME</h2>
           <input
             type="text"
             name="subject"
@@ -87,7 +93,10 @@ const Kontakt = () => {
             required
           />
           <button type="submit">Send message</button>
-          <OrButton/>
+
+          {successMsg && <div className="success-message">{successMsg}</div>}
+          {errorMsg && <div className="error-message">{errorMsg}</div>}
+          <DirectEmailText/>
         </form>
       </div>
 
@@ -98,4 +107,4 @@ const Kontakt = () => {
   );
 };
 
-export default Kontakt;
+export default Contact;
