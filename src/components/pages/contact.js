@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import DirectEmailText from "../utils/DirectEmailText";
-import "../styles/kontakt.css";
+import "../styles/contact.css";
 import emailjs from 'emailjs-com';
 
 const Contact = () => {

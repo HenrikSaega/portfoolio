@@ -15,8 +15,6 @@
   height: 6vh;
   transition: 0.3s ease;
 }
-
-
 .nav-buttons {
   display: flex;
   justify-content: center;
@@ -62,7 +60,7 @@
 }
 
 
-a{
+.header_a{
   font-family: Mulish, Arial, Helvetica, sans-serif;
   color: #FFF;
   font-size: clamp(0.5rem, 3vw, 1.5rem);
@@ -73,18 +71,18 @@ a{
 }
 
 
-a:hover{
+.header_a:hover{
   color: #fa812b;
   scale: 1.2;
   transform: translateY(0.3rem);
 }
 
 
-.navigation-menu-small .nav-buttons a {
+.navigation-menu-small .nav-buttons header_a {
   font-size: 1.2rem
 }
 
 
-a.active {
+.header_a.active {
   color: #fa812b;
 }

@@ -1,7 +1,7 @@
 import "../styles/home.css";
 import "../styles/global.css"
 import { useEffect} from "react";
-import Carousel from "../functions/carousel";
+import Carousel from "../functions/Carousel";
 import pilt from "../pics/1-1.png";
 
 const images = [
