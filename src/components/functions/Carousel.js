@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const InfiniteCarousel = ({ items, speed = 0.33 }) => {
+const InfiniteCarousel = ({ items, speed = 0.4 }) => {
   const containerRef = useRef(null);
   const animationRef = useRef(null);
   const positionRef = useRef(0);

@@ -41,7 +41,9 @@ html, body {
 
 
 .footer {
-    background-color: #686E78;
+    background: rgba(66, 66, 66, 0.301);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #FFF;
     padding: 1rem 0;
     text-align: center;
@@ -63,4 +65,13 @@ html, body {
   -webkit-user-drag: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+
+
+h1,h2,p {
+    color: white;
+}
+
+h1:hover{
+    color:#ffa667
 }

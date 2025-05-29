@@ -1,4 +1,4 @@
-import "../styles/avaleht.css";
+import "../styles/home.css";
 import "../styles/global.css"
 import { useEffect} from "react";
 import Carousel from "../functions/carousel";

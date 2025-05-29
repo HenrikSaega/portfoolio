@@ -40,6 +40,9 @@
     font-weight: 800;
     margin-bottom: 1rem;
 }
+.main-content-width h1:hover{
+    color:#FFA667;
+}
 
 
 .main-content-width p{

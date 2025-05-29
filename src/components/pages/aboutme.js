@@ -6,7 +6,7 @@ import certLearmHTML from "../pics/Learn HTML Course.PNG"
 import certJSFundamental from "../pics/JS - Fundamentals Course.PNG";
 import certJSFunctions from "../pics/JS - Functions and Scope Course.png";
 
-
+import pilt from "../pics/2.png";
 
 const Aboutme = () => {
     return (
@@ -21,7 +21,7 @@ const Aboutme = () => {
                 </div>
                 <div className="aboutme-picture-placeholder-container">
                     <div className="aboutme-picture-placeholder">
-
+                        <img className="no-select" src={pilt} alt="Picture of Henrik, watching sunset."/>
                     </div>
                 </div>
             </div>
