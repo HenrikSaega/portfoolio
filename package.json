@@ -2,7 +2,7 @@
   "name": "portfoolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vso24saega.ita.voco.ee/portfoolio/",
+  "homepage": "https://vso24saega.ita.voco.ee/portfolio/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",

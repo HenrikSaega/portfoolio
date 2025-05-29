@@ -13,10 +13,10 @@ const App = () => {
       <Header/>
       <main style={{ paddingTop: '80px' }}>
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/aboutme" element={<Aboutme/>} />
-          <Route path="/projects" element={<Projects/>} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/portfolio/" element={<Home/>} />
+          <Route path="/portfolio/aboutme" element={<Aboutme/>} />
+          <Route path="/portfolio/projects" element={<Projects/>} />
+          <Route path="/portfolio/contact" element={<Contact/>} />
         </Routes>
       </main>
     </Router>

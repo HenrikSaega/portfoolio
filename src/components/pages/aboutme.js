@@ -1,4 +1,4 @@
-import "../styles/projects.css"
+import "../styles/aboutme.css"
 import "../styles/global.css"
 import OtherSkillsToggle from "../functions/otherSkills";
 import certNameCheap from "../pics/How to Make a Website with NameCheap Course.PNG";
