@@ -11,9 +11,9 @@ import pilt from "../pics/2.png";
 const Aboutme = () => {
     return (
         <>
-            <div className="global-row global-full-height">
-                <div className="col left-intro-container">
-                    <div className="aboutme-intro-content-width">
+            <div className="aboutme-row">
+                <div className="text-container">
+                    <div className="text-content-width">
                         <h1 className="no-select">ABOUT ME</h1><hr/>
                         <h2 className="no-select">HENRIK SAEGA</h2>
                         <p className="no-select">I am a 20 years old student in Tartu Vocational College and currently studying software development.</p>
@@ -29,10 +29,21 @@ const Aboutme = () => {
             <hr className="aboutme-hr"/>
 
             <div className="aboutme-main-content">
-                <p className="no-select">Choosing between software development and IT system specialist was tough, but my early interest in programming led me to software development.
-                <br/>In gymnasium, I signed up for a programming course at the University of Tartu, where I learned Python for a year. In my second year of gymnasium, I did my final project on a topic that combined my interests: programming, 3D modeling, IoT, and virtual reality. The goal was to escape from three school rooms using the help of IoT devices. After reaching the goal, players could explore the whole school in VR. During this period, I focused mainly on game development and was learning C#. 
-                <br/>I am calm and thoughtful and work well under pressure—a mindset shaped further by 11 months of military service in Kuperjanov Infantry Batallion. I take the initiative of tasks and see them through with discipline and teamwork.
-                </p>
+                <div className="text-section">
+                    <p>
+                        Choosing between software development and IT system specialist was tough, but my early interest in programming led me to software development.
+                    </p>
+                </div>
+                <div className="text-section">
+                    <p>
+                        In gymnasium, I signed up for a programming course at the University of Tartu, where I learned Python for a year. In my second year of gymnasium, I did my final project on a topic that combined my interests: programming, 3D modeling, IoT, and virtual reality.
+                    </p>
+                </div>
+                <div className="text-section">
+                    <p>
+                        I am calm and thoughtful and work well under pressure - a mindset shaped further by military service in Kuperjanov Infantry Batallion. I take the initiative of tasks and see them through with discipline and teamwork.
+                    </p>
+                </div>
             </div>
 
             <hr className="aboutme-hr"/>
@@ -69,15 +80,15 @@ const Aboutme = () => {
                         <p className="no-select">MariaDB</p>
                     </div>
                 </div>
+                <OtherSkillsToggle/>
             </div>
             
-            <OtherSkillsToggle/>
             <hr className="aboutme-hr"/>
-            
+
             <div className="certifiactions">
-                <p>CodeCademy</p>
+                <p className="no-select main-p">CodeCademy</p>
                 <h2 className="no-select">CERTIFICATIONS</h2>
-                <hr className="cert-hr"/>
+                
                 <div className="cert-container">
                     <div className="cert">
                         <p className="no-select">How to make a Website with NameCheap</p>
@@ -105,7 +116,7 @@ const Aboutme = () => {
                     </div>
                 </div>
             </div>
-            <footer className="footer">
+            <footer className="aboutme_footer">
                 <p>&copy; 2025 All rights reserved</p>
             </footer>
         </>

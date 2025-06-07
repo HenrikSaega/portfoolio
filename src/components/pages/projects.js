@@ -2,7 +2,6 @@ import { useState } from "react";
 import projects from "../utils/projectsData";
 import "../styles/projects.css";
 import { AiOutlineLink } from "react-icons/ai";
-import { AiFillGithub } from "react-icons/ai";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -13,13 +12,8 @@ const Projects = () => {
   return (
     <>
         <div className="projektid-container">
-            <div className="projektid-content-width">
-                <div className="projektid-tekst">
-                    <h1 className="no-select">PROJECTS</h1>
-                </div>
-            </div>
-
-            <div className="projektid-grid-container">
+          <p className="no-select projects-h1">PROJECTS</p>
+          <div className="projektid-grid-container">
             {projects.map((project) => (
                 <div
                     key={project.id}
@@ -29,7 +23,7 @@ const Projects = () => {
                     <img src={project.image} alt={project.title} className="grid-item-image" />
                 </div>
             ))}
-            </div>
+          </div>
       </div>
 
       {selectedProject && (
@@ -72,8 +66,8 @@ const Projects = () => {
         </div>
       )}
 
-      <footer className="footer">
-        <p>&copy; 2025 Kõik õigused kaitstud</p>
+      <footer className="projects_footer">
+        <p>&copy; 2025 All rights reserved</p>
       </footer>
     </>
   );

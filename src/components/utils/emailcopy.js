@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../styles/emailcopy.css"
+import "../styles/contactcopy.css"
 import { AiOutlineMail } from "react-icons/ai";
 
 const EmailCopy = () => {

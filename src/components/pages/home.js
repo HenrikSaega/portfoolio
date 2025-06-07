@@ -1,48 +1,24 @@
-import "../styles/home.css";
-import { useEffect} from "react";
-import pilt from "../pics/1-1.png";
-
-const images = [
-  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-  'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
-  'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
-  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg",
-  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg"
-];
-
+import { NavLink } from 'react-router-dom';
+import "../styles/home.css"; 
+import ResumeButton from '../utils/resumebutton';
 const Home = () => {
-
-
-    useEffect(() => {
-        document.body.classList.add("avaleht-overflow-hidden");
-        window.scrollTo(0, 0);
-            return () => {
-                document.body.classList.remove("avaleht-overflow-hidden");
-            };
-    }, []);
     
   return (
-    <div className="avaleht-container">
+    <>
       <div className="avaleht-content">
-        <div className="main-content">
-          <div className="main-content-width">
-            <h1 className="no-select">HENRIK SAEGA</h1>
-            <hr />
-            <p className="no-select">"You can make money with time, but you can't make time with money"</p>
-          </div>
-        </div>
-        <div className="picture-content">
-          <div className="picture-placeholder no-select">
-            <img className="no-select" src={pilt} alt="Picture of Henrik, watching sunset."/>
-          </div>
-        </div>
+        <p className="no-select home-h1">HENRIK SAEGA</p>
+        <p className='no-select welcome-p'>PORTFOLIO</p>
+        <p className="no-select home-p">"You can make money with time, but you can't make time with money"</p>
+      </div>
+      <div className="forwarding">
+        <NavLink to="/aboutme" className="button-link">About me</NavLink>
+        <NavLink to="/projects" className="button-link">Projects</NavLink>
+        <ResumeButton/>
       </div>
       <footer className="home_footer">
         <p>&copy; 2025 All Rights Reserved</p>
       </footer>
-    </div>
+    </>
   );
 };
 

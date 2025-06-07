@@ -1,29 +1,28 @@
 import React, { useState, useRef } from "react";
-import { IconName } from "react-icons/ai";
 import "../styles/contact.css";
 import emailjs from 'emailjs-com';
 import EmailCopy from "../utils/emailcopy";
-import PhoneCopy from "../utils/phonecopy";
 
 const Contact = () => {
+  const formRef = useRef();
+  const [successMsg, setSuccessMsg] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
+  const emailRegex = /^[^\s@]+@([a-zA-Z0-9-]+\.)+(ee|eu|com|net|org)$/i;
   const [formData, setFormData] = useState({
     subject: "",
     name: "",
     email: "",
     message: ""
   });
-  const formRef = useRef();
-  const [successMsg, setSuccessMsg] = useState("");
-  const [errorMsg, setErrorMsg] = useState("");
   const handleChange = (e) => {
     setFormData({...formData, [e.target.name]: e.target.value});
   };
-  const emailRegex = /^[^\s@]+@([a-zA-Z0-9-]+\.)+(ee|eu|com|net|org)$/i;
+  
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!emailRegex.test(formData.email)) {
-    setErrorMsg("Please emter a valid email address ending!");
+    setErrorMsg("Please enter a valid email address ending!");
     setSuccessMsg("");
     setTimeout(() => setErrorMsg(""), 5000);
     return;
@@ -51,9 +50,9 @@ const Contact = () => {
 
   return (
     <>
-      <div className="kontakt-form-container">
-        <h1 className="no-select">CONTACT ME</h1>
-        <form ref={formRef} className="kontakt-form" onSubmit={handleSubmit}>
+      <div className="contact-form-container">
+        <p className="no-select contact-h1">CONTACT ME</p>
+        <form ref={formRef} className="contakt-form" onSubmit={handleSubmit}>
           <input
             type="text"
             name="subject"
@@ -87,17 +86,15 @@ const Contact = () => {
             onChange={handleChange}
             required
           />
-          <button type="submit">Send message</button>
+          <button type="submit">Send</button>
 
           {successMsg && <div className="success-message">{successMsg}</div>}
           {errorMsg && <div className="error-message">{errorMsg}</div>}
           <div className="directContact">
             <EmailCopy/>
-            <PhoneCopy/>
           </div>
         </form>
       </div>
-
       <footer className="contact_footer">
         <p>&copy; 2025 All Rights Reserved</p>
       </footer>

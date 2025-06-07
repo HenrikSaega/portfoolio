@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../styles/phonecopy.css"
+import "../styles/contactcopy.css"
 import { AiFillPhone } from "react-icons/ai";
 
 const PhoneCopy = () => {

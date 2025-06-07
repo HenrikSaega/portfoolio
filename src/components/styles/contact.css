@@ -1,5 +1,5 @@
-.kontakt-form-container {
-  height: 90vh;
+.contact-form-container {
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,78 +7,92 @@
   box-sizing: border-box;
   flex-direction: column;
   position: relative;
+  margin-top: 3rem;
 }
 
 
-.kontakt-form {
+.contakt-form {
   background: #343d49 ;
   padding: 2.5rem 3rem;
   border-radius: 1rem;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  max-width: 50vw;
+  max-width: 40vw;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 }
-h1{
-    font-size: 4rem;
-    font-weight: 800;
-    transition: 0.3s ease;
-}
-h1:hover{
-    scale: 1.1;
-    color: #ffa66f
+
+
+.contact-h1{
+  font-size: clamp(1.8rem, 3vw, 4.5rem);
+  font-weight: 300;
+  transition: 0.3s ease;
 }
 
-.kontakt-form input,
-.kontakt-form textarea {
-  padding: 0.8rem 1rem;
+
+.contact-h1:hover{
+  scale: 1.2;
+  color: #ffa66f
+}
+
+
+.contakt-form input,
+.contakt-form textarea {
+  padding: 0.6rem 1rem;
   border-radius: 8px;
-  border: 1.5px solid #ccc;
-  font-size: 1rem;
+  border: 0.2rem solid #ccc;
+  font-size: clamp(0.6rem, 1vw, 1rem);
   font-family: inherit;
   resize: none;
   transition: border-color 0.3s ease;
 }
 
-.kontakt-form input:focus,
-.kontakt-form textarea:focus {
+
+.contakt-form input:focus,
+.contakt-form textarea:focus {
   outline: none;
   border-color: #ffa667;
 }
 
-.kontakt-form button[type="submit"] {
-  padding: 0.8rem;
+
+.contakt-form button[type="submit"] {
+  padding: 0.2rem;
   background-color: #ffa667;
   border: none;
-  border-radius: 8px;
-  color: white;
-  font-weight: 600;
-  font-size: 18px;
+  border-radius: 1rem;
+  color: #fff;
+  font-weight: 300;
+  font-size: clamp(0.5rem, 1.5vw, 2rem);
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
+  width: 50%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
 }
 
-.kontakt-form button:hover[type="submit"] {
+
+.contakt-form button:hover[type="submit"] {
   background-color: #ff8c33;
+  scale: 1.1;
 }
+
 
 .success-message, .error-message {
   position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 400px;
+  top: 20%;
+  align-self: center;
+  width: auto;
   z-index: 1000;
   padding: 0.8rem 1rem;
-  border-radius: 5px;
-  font-weight: 600;
+  border-radius: 1rem;
+  font-weight: 300;
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
   text-align: center;
   box-sizing: border-box;
   transition: 0.3s ease;
 }
+
 
 .success-message {
   color: #4BB543;
@@ -86,15 +100,17 @@ h1:hover{
   border: 1px solid #4BB543;
 }
 
+
 .error-message {
   color: #d9534f;
   background-color: #f8d7da;
   border: 1px solid #d9534f;
 }
 
-.directContact {
-  display: flex;
+.directContact{
+  margin-bottom: clamp(-1.5rem, 3vw, -3rem);
 }
+
 .contact_footer {
     background: rgba(66, 66, 66, 0.301);
     backdrop-filter: blur(5px);
@@ -103,7 +119,7 @@ h1:hover{
     padding: 1rem 0;
     text-align: center;
     height: 50px;
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 2vw, 1em);
     user-select: none;
     flex-shrink: 0;
     position: fixed;

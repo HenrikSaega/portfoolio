@@ -19,27 +19,6 @@ html, body {
 }
 
 
-.global-row{
-    display: flex;
-    flex-wrap: wrap;
-    margin: -0.75rem 0;
-}
-
-
-.global-full-height {
-    flex: 1;
-}
-
-
-.container-fluid{
-    background-color: #222831;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-
 .no-select {
   user-select: none;
   -webkit-user-select: none;
@@ -49,6 +28,6 @@ html, body {
 }
 
 
-h1,h2,p {
-    color: white;
+h1, p{
+    color: #fff;
 }
