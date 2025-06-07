@@ -15,7 +15,7 @@
 
 
 .projektid-content-width h1{
-    font-size: 82px;
+    font-size: 4rem;
     font-weight: 800;
     transition: 0.3s ease;
 }
@@ -52,7 +52,7 @@
     scale: 1.1;
 }
 
-.modal-overlay {
+.model-overlay {
   position: fixed;
   inset: 0;
   background-color: rgba(0,0,0,0.6);
@@ -62,7 +62,7 @@
   z-index: 100;
 }
 
-.modal-content {
+.model-content {
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(5px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -78,17 +78,21 @@
 }
 
 
-.modal-grid {
+.model-grid {
   display: flex;
   gap: 2rem;
 }
-
-.modal-left img {
+.model-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.model-left img {
   width: 30rem;
   height: auto;
   border-radius: 1rem;
 }
-.modal-right {
+.model-right {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -100,9 +104,9 @@ h2{
     font-weight: 800;
 }
 
-.modal-tags span {
+.model-tags span {
   display: inline-block;
-  background-color: #ddd;
+  background-color: #fff;
   padding: 0.2rem 3rem;
   margin-right: 0.5rem;
   border-radius: 15px;
@@ -110,12 +114,8 @@ h2{
   transition: 0.3s ease;
   margin-right: 1rem;
 }
-.modal-tags span:hover {
-  scale: 1.2;
-  background-color: #fff;
-}
 
-.modal-gallery {
+.model-gallery {
   display: flex;
   margin: auto;
   align-items: center;
@@ -123,36 +123,32 @@ h2{
   gap: clamp(3rem, 1vw, 5rem)
 }
 
-.modal-gallery img {
+.model-gallery img {
   width: 100%;
   max-width: 23%;
   border-radius: 1rem;
   object-fit: cover;
   transition: 0.3s ease;
 }
-.modal-gallery img:hover {
+.model-gallery img:hover {
     scale: 1.25;
     transform: translateY(-1rem);
 }
 
-.live-button {
+.linkBtton{
   display: flex;
-  padding: 0.5rem 1rem;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 1rem;
-  width: 10rem;
+  align-items: center;
   justify-content: center;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  width: 4rem;
+  height: 3rem;
   transition: 0.3s ease;
-  position: absolute;
-  right: 2%;
-  bottom: 45%;
+  margin-top: 1rem;
+  color: black;
 }
 
-.live-button:hover {
-  background-color: #ffa667;
+.linkBtton:hover{
   scale: 1.2;
 }
 .grid-item-image {
@@ -161,4 +157,21 @@ h2{
   border-radius: 8px;
   object-fit: cover;
   margin-bottom: 0.5rem;
+}
+
+.footer {
+    background: rgba(66, 66, 66, 0.301);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #FFF;
+    padding: 1rem 0;
+    text-align: center;
+    height: 50px;
+    font-size: 1rem;
+    user-select: none;
+    flex-shrink: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }

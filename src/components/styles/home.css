@@ -1,7 +1,3 @@
-.avaleht-overflow-hidden {
-  overflow: hidden;
-}
-
 .avaleht-container{
     display: flex;
     flex-direction: column;
@@ -50,34 +46,7 @@
     font-size: clamp(0.5rem, 1vw, 1.5rem);
 }
 
-
-.title-images-container{
-    gap: 1.5rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-
-.title-showcase-image{
-    flex: 1;
-    background-color: #FFA667;
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem;
-    transition: 0.3s ease;
-}
-
-
-.title-showcase-image:hover{
-    transform: scale(1.1) translateY(-1rem);
-}
-
-
-.side-content {
+.picture-content {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -109,8 +78,11 @@
     transform: scale(1.1) translateY(-1rem);
 }
 
-.avaleht-footer {
-    background-color: #686E78;
+
+.home_footer {
+    background: rgba(66, 66, 66, 0.301);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #FFF;
     padding: 1rem 0;
     text-align: center;

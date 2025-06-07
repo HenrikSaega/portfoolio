@@ -75,29 +75,30 @@ const Aboutme = () => {
             <hr className="aboutme-hr"/>
             
             <div className="certifiactions">
-                <h2 className="no-select">CERTIFIACTIONS</h2>
+                <p>CodeCademy</p>
+                <h2 className="no-select">CERTIFICATIONS</h2>
                 <hr className="cert-hr"/>
                 <div className="cert-container">
                     <div className="cert">
-                        <h2 className="no-select">How to make a Website with NameCheap</h2>
+                        <p className="no-select">How to make a Website with NameCheap</p>
                         <div className="cert-pic">
                             <img src={certNameCheap} alt=""/>
                         </div>
                     </div>
                     <div className="cert">
-                        <h2 className="no-select">LearnHTML</h2>
+                        <p className="no-select">LearnHTML</p>
                         <div className="cert-pic">
                             <img src={certLearmHTML} alt=""/>
                         </div>
                     </div>
                     <div className="cert">
-                        <h2 className="no-select">Learn JavaScript: Functions and Scope Course</h2>
+                        <p className="no-select">Learn JavaScript: Functions and Scope Course</p>
                         <div className="cert-pic">
                             <img src={certJSFunctions} alt=""/>
                         </div>
                     </div>
                     <div className="cert">
-                        <h2 className="no-select">Learn JavaScript: Fundamentals Course</h2>
+                        <p className="no-select">Learn JavaScript: Fundamentals Course</p>
                         <div className="cert-pic">
                             <img src={certJSFundamental} alt=""/>
                         </div>

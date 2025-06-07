@@ -1,0 +1,27 @@
+.email-container {
+    height: 3rem;
+  display: flex;
+  margin: auto;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  align-items: center;
+}
+
+.email-container:hover {
+  color: #ffffff;
+  scale: 1.1;
+}
+
+.email-container.copied {
+  color: #fff;
+}
+.email-icon {
+  height: auto;
+  scale: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:  0 1.5rem;
+}

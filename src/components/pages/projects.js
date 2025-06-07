@@ -1,12 +1,14 @@
 import { useState } from "react";
 import projects from "../utils/projectsData";
 import "../styles/projects.css";
+import { AiOutlineLink } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const openModal = (project) => setSelectedProject(project);
-  const closeModal = () => setSelectedProject(null);
+  const openModel = (project) => setSelectedProject(project);
+  const closeModel = () => setSelectedProject(null);
 
   return (
     <>
@@ -22,7 +24,7 @@ const Projects = () => {
                 <div
                     key={project.id}
                     className="projektid-grid-item no-select"
-                    onClick={() => openModal(project)}>
+                    onClick={() => openModel(project)}>
                     <p>{project.title}</p>
                     <img src={project.image} alt={project.title} className="grid-item-image" />
                 </div>
@@ -31,35 +33,37 @@ const Projects = () => {
       </div>
 
       {selectedProject && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <div className="modal-grid">
-              <div className="modal-left">
+        <div className="model-overlay" onClick={closeModel}>
+          <div className="model-content" onClick={(e) => e.stopPropagation()}>
+            <div className="model-grid">
+              <div className="model-left">
                 <img src={selectedProject.image} alt="Project preview" />
-              </div>
-              <div className="modal-right">
-                <h2>{selectedProject.title}</h2>
-                <p><strong>CATEGORY:</strong> {selectedProject.category}</p>
-                <p><strong>RELEASE DATE:</strong> {selectedProject.releaseDate}</p>
-                <p>{selectedProject.description}</p>
-                <div className="modal-tags">
-                  {selectedProject.tags.map((tag, index) => (
-                    <span key={index}>{tag}</span>
-                  ))}
-                </div>
                 {selectedProject.live && (
                     <a
                     href={selectedProject.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="live-button"
+                    className="linkBtton"
                     >
-                        LIVE
+                        <AiOutlineLink size="30"/>
                     </a>
                 )}
               </div>
+              <div className="model-right">
+                <h2>{selectedProject.title}</h2>
+                <p><strong>CATEGORY:</strong> {selectedProject.category}</p>
+                <p><strong>RELEASE DATE:</strong> {selectedProject.releaseDate}</p>
+                <p>{selectedProject.description}</p>
+                <div className="model-tags">
+                  {selectedProject.tags.map((tag, index) => (
+                    <span key={index}>{tag}</span>
+                  ))}
+                </div>
+                
+              </div>
+              
             </div>
-            <div className="modal-gallery">
+            <div className="model-gallery">
               {selectedProject.gallery.map((img, i) => (
                 <img key={i} src={img} alt={`Preview ${i + 1}`} />
               ))}

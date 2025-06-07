@@ -1,7 +1,9 @@
 import React, { useState, useRef } from "react";
-import DirectEmailText from "../utils/DirectEmailText";
+import { IconName } from "react-icons/ai";
 import "../styles/contact.css";
 import emailjs from 'emailjs-com';
+import EmailCopy from "../utils/emailcopy";
+import PhoneCopy from "../utils/phonecopy";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,21 +12,13 @@ const Contact = () => {
     email: "",
     message: ""
   });
-
   const formRef = useRef();
   const [successMsg, setSuccessMsg] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
-
-
   const handleChange = (e) => {
     setFormData({...formData, [e.target.name]: e.target.value});
   };
-
-
   const emailRegex = /^[^\s@]+@([a-zA-Z0-9-]+\.)+(ee|eu|com|net|org)$/i;
-
-
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -53,6 +47,7 @@ const Contact = () => {
       setTimeout(() => setErrorMsg(""), 5000);
     });
   };
+
 
   return (
     <>
@@ -96,11 +91,14 @@ const Contact = () => {
 
           {successMsg && <div className="success-message">{successMsg}</div>}
           {errorMsg && <div className="error-message">{errorMsg}</div>}
-          <DirectEmailText/>
+          <div className="directContact">
+            <EmailCopy/>
+            <PhoneCopy/>
+          </div>
         </form>
       </div>
 
-      <footer className="footer">
+      <footer className="contact_footer">
         <p>&copy; 2025 All Rights Reserved</p>
       </footer>
     </>

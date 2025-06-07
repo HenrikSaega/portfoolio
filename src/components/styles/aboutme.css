@@ -40,7 +40,7 @@ body{
     font-weight: 800;
 }
 .aboutme-intro-content-width h2{
-    font-size: 42px;
+    font-size: 32px;
     margin-bottom: 2rem;
     transition: 0.3s ease;
 }
@@ -121,8 +121,8 @@ body{
 
 
 .skills-item{
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     background-color: #ffa66700;
     border-radius: 1rem;
     transition: 0.3s ease;
@@ -203,4 +203,21 @@ body{
 .cert-pic:hover{
     scale: 1.05;
     transform: translateY(-0.2rem);
+}
+
+.footer {
+    background: rgba(66, 66, 66, 0.301);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #FFF;
+    padding: 1rem 0;
+    text-align: center;
+    height: 50px;
+    font-size: 1rem;
+    user-select: none;
+    flex-shrink: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
