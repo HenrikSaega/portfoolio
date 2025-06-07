@@ -27,7 +27,7 @@ export default function ResumePopup() {
                   className="download-link"
                   onClick={e => e.stopPropagation()}
                 >
-                 <MdOutlineFileDownload color="black" size={40}/>
+                 <MdOutlineFileDownload color="white" size={40}/>
                 </a>
                 <button className="close-button" onClick={() => setIsOpen(false)}>
                   Close

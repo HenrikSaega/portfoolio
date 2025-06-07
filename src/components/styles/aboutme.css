@@ -53,7 +53,7 @@ body{
 
 
 .text-content-width h1{
-    font-size: clamp(4rem, 5rem, 6rem);
+    font-size: clamp(3.5rem, 4rem, 4.5rem);
     font-weight: 300;
     transition: 0.3s ease;
 }
@@ -63,7 +63,7 @@ body{
 }
 
 .text-content-width h2{
-    font-size: clamp(2rem, 3rem, 4rem);
+    font-size: clamp(2rem, 2.5rem, 3rem);
     margin-bottom: 2rem;
     font-weight: 300;
     transition: 0.3s ease;
@@ -72,7 +72,7 @@ body{
 
 .text-content-width p{
     max-width: 50%;
-    font-size: clamp(0.5rem, 3vw, 1.2rem);
+    font-size: clamp(0.5rem, 3vw, 1rem);
 }
 
 
@@ -81,7 +81,7 @@ body{
     align-items: center;
     justify-content: center;
     height: auto;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     font-size: clamp(0.2rem, 1.5vw, 1rem);
@@ -97,9 +97,8 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
     padding: 1rem;
-    min-height: 15rem;
-    max-height: 20rem;
-    width: 30rem;
+    height: 17rem;
+    width: 33%;
     transition: 0.3s ease;
     align-self: start;
 }
