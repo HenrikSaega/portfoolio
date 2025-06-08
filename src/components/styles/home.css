@@ -48,13 +48,13 @@
     text-decoration: none;
     transition: 0.3s ease;
     background-color: #FFA667;
-    border-radius: 1rem;
     padding: 0.2rem 3rem;
     width: 70%;
     align-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 1rem;
 }
 
 
