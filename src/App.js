@@ -12,7 +12,7 @@ const App = () => {
       <Header/>
       <main style={{ paddingTop: '80px' }}>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/home" element={<Home/>} />
           <Route path="/aboutme" element={<Aboutme/>} />
           <Route path="/projects" element={<Projects/>} />
           <Route path="/contact" element={<Contact/>} />

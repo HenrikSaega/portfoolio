@@ -32,7 +32,7 @@ const Header = () => {
       onMouseLeave={() => setHovered(false)}
     >
       <nav className="nav-buttons">
-        <NavLink className="no-select header_a"  to="/" exact="true" activeClassName="active">HOME</NavLink>
+        <NavLink className="no-select header_a"  to="/home" exact="true" activeClassName="active">HOME</NavLink>
         <NavLink className="no-select header_a"  to="/aboutme" activeclassname="active">ABOUT ME</NavLink>
         <Logo className='logo no-select' />
         <NavLink className="no-select header_a"  to="/projects" activeclassname="active">PROJECTS</NavLink>
