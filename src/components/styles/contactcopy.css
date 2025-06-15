@@ -28,3 +28,23 @@
   scale: 3;
   margin:  0 1.5rem;
 }
+
+
+@media (max-width: 768px) {
+  .phone-container,
+  .email-container {
+    font-size: 1rem;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    justify-content: flex-start;
+  }
+  .phone-icon,
+  .email-icon {
+    scale: 2;
+    margin: 0 1rem 0 0.5rem;
+  }
+  .phone-container:hover,
+  .email-container:hover {
+    transform: none !important;
+  }
+}

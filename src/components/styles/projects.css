@@ -171,3 +171,109 @@ h2{
     width: 100%;
     z-index: 999;
 }
+
+
+@media (max-width: 768px) {
+  .projektid-container {
+    height: auto;
+    padding: 1rem;
+    transition: none !important; 
+    transform: none !important;
+    scale: 1 !important;
+  }
+
+  .projektid-grid-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    transition: none !important; 
+    transform: none !important;
+    scale: 1 !important;
+  }
+
+  .projektid-grid-item {
+    width: 90%;
+    transition: none !important; 
+    transform: none !important;
+    scale: 1 !important;
+  }
+
+  .grid-item-image {
+    height: auto;
+    max-height: 50vh;
+    transition: none !important; 
+    transform: none !important;
+    scale: 1 !important;
+  }
+
+  .model-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 1.5rem;
+    transition: none !important; 
+    transform: none !important;
+    scale: 1 !important;
+  }
+
+  .model-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: none !important; 
+    transform: none !important;
+    scale: 1 !important;
+  }
+  .model-right{
+    text-align: center;
+  }
+  .model-left img {
+    max-width: 100%;
+    height: auto;
+    transition: none !important; 
+    transform: none !important;
+    scale: 1 !important;
+  }
+
+  .model-gallery {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2vh;
+    transition: none !important; 
+    transform: none !important;
+    scale: 1 !important;
+  }
+
+  .model-gallery img {
+    max-width: 45%;
+    transition: none !important; 
+    transform: none !important;
+    scale: 1 !important;
+  }
+
+  .model-tags span {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+    transition: none !important; 
+    transform: none !important;
+    scale: 1 !important;
+  }
+
+  .linkBtton {
+    width: 3rem;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    transition: none !important; 
+    transform: none !important;
+    scale: 1 !important;
+  }
+
+  .projects-h1 {
+    font-size: 2.5rem;
+    transition: none !important; 
+    transform: none !important;
+    scale: 1 !important;
+  }
+}

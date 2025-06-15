@@ -268,3 +268,144 @@ body{
     width: 100%;
     z-index: 999;
 }
+
+
+@media (max-width: 768px) {
+
+
+    .aboutme-row {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+
+    .text-container {
+      justify-content: center;
+    }
+
+
+    .text-content-width p {
+      max-width: 90%;
+      font-size: 1.1rem;
+    }
+
+
+    .text-content-width h1 {
+      font-size: 3.5rem;
+    }
+
+
+    .text-content-width h2 {
+      font-size: 2.5rem;
+    }
+
+
+    .text-content-width h1,
+    .text-contect-width h2 {
+      margin-top: 2rem;
+    }
+
+
+    .aboutme-picture-placeholder-container{
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        height: 70vh;
+    }
+
+
+    .aboutme-picture-placeholder {
+        position: absolute;
+        border-radius: 0;
+    }
+
+
+    .aboutme-picture-placeholder img {
+      width: 260%;
+      height: 260%;
+      margin-top: 0;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+
+    .aboutme-main-content {
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 90%;
+    }
+    
+
+    .text-section {
+      width: 100%;
+      min-height: auto;
+      padding: 1rem 0.5rem;
+      text-align: center;
+      font-size: 0.7rem;
+      transform: none !important;
+      transition: none !important;
+    }
+
+
+    .text-section:hover {
+        scale: 1 !important;
+        background-color: transparent !important;
+        transform: none !important;
+        background: rgba(66, 66, 66, 0.50) !important;
+    }
+
+
+    .skills-item-container {
+      grid-template-columns: repeat(2, 1fr);
+      display: grid;
+      height: auto;
+      gap: 3rem;
+      justify-items: center;
+      margin-top: 5rem;
+    }
+
+
+    .skills-item {
+      width: 6rem;
+      height: 6rem;
+      transition: none;
+    }
+
+
+    .cert-container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      width: 90%;
+    }
+
+
+    .cert-pic {
+      height: auto;
+    }
+
+
+    .cert-pic img {
+      height: auto;
+      width: 100%;
+    }
+
+
+    .skills-item,
+    .cert-pic {
+      transition: none !important;
+    }
+
+
+    .skills-item:hover,
+    .cert-pic:hover {
+      transform: none !important;
+      scale: 1 !important;
+    }
+
+
+    .skills-item p,
+    .cert-pic p {
+      color: white !important;
+    }
+}

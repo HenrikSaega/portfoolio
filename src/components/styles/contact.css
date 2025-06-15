@@ -128,3 +128,43 @@
     width: 100%;
     z-index: 999;
 }
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .contakt-form {
+    max-width: 90vw;
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .contact-h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contakt-form input,
+  .contakt-form textarea {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .contakt-form button[type="submit"] {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .success-message,
+  .error-message {
+    top: 10%;
+    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .directContact {
+    margin-bottom: -1.5rem;
+  }
+}
