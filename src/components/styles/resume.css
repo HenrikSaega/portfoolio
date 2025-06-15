@@ -80,7 +80,7 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
    .resume-button {
     padding: 0.2rem 3rem;
     width: 80%;

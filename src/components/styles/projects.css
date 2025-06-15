@@ -173,7 +173,7 @@ h2{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .projektid-container {
     height: auto;
     padding: 1rem;

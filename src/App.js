@@ -5,20 +5,23 @@ import Contact from "./components/pages/contact";
 import Projects from "./components/pages/projects";
 import Aboutme from "./components/pages/aboutme";
 import Header from "./components/functions/Header";
+import { Navigate } from 'react-router-dom';
 
 const App = () => {
   return (
-    <Router>
-      <Header/>
-      <main style={{ paddingTop: '80px' }}>
-        <Routes>
-          <Route path="/home" element={<Home/>} />
-          <Route path="/aboutme" element={<Aboutme/>} />
-          <Route path="/projects" element={<Projects/>} />
-          <Route path="/contact" element={<Contact/>} />
-        </Routes>
-      </main>
-    </Router>
+    <Router basename="/home">
+    <Header/>
+     <main style={{ paddingTop: '80px' }}>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/aboutme" element={<Aboutme />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<Navigate to="/" />} />
+    </Routes>
+  </main>
+</Router>
+
   );
 }
 
